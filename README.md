@@ -10,7 +10,7 @@ Zeppelin stop                                              [  OK  ] <br \>
 Zeppelin start                                             [  OK  ] <br \>
 root@6d1917214148:/opt/zeppelin-0.6.1-bin-all/bin# <br \>
 
-File conf/shiro.ini has been modified to for granting access only to admin user:
+File conf/shiro.ini has been modified  for granting access only to admin user:
 
 root@6d1917214148:/opt/zeppelin-0.6.1-bin-all/bin# curl http://admin:password1@172.17.0.1:8080  <br \>
 <!doctype html><!-- <br \>
