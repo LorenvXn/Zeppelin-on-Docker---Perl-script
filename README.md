@@ -9,14 +9,14 @@ After running the script, you will be promted to /opt/zeppelin-0.6.1-bin-all/con
 
 File conf/shiro.ini has been modified  for granting access only to admin user.
 
-Go to bin folder and (re)Start the daemon before starting the web-based notebook:
+Go to bin folder and (re)Start the Zeppelin daemon:
 
 ``root@6d1917214148:/opt/zeppelin-0.6.1-bin-all/bin# ./zeppelin-daemon.sh restart``  <br \>
 ``Zeppelin stop ``                                             [  OK  ]  <br \>
 ``Zeppelin start  ``                                           [  OK  ] <br \>
 ``root@6d1917214148:/opt/zeppelin-0.6.1-bin-all/bin#``  <br \>
 
-Check if the Zeppelin is working:
+Check if the web-based notebook is working:
 
 ``root@6d1917214148:/opt/zeppelin-0.6.1-bin-all/bin# curl http://admin:password1@172.17.0.1:8080``  <br \>
 ``<!doctype html><!--`` <br \>
