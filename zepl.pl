@@ -39,3 +39,12 @@ WORKDIR /opt/zeppelin/bin
 EXPOSE 8080";
 
 close $fh;
+
+system("docker build -t ledzeppelin . ");
+system("docker run -it ledzeppelin /bin/bash");
+
+############################################################################
+# Script based on below link:
+# https://sparkour.urizone.net/recipes/installing-zeppelin/
+############################################################################
+
