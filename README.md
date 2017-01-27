@@ -35,4 +35,5 @@ Check if the web-based notebook is working:
 ``[ --- etc --- ]`` 
 
 
-The script start_browser.sh will find the container's IP, and start the Zeppelin in browser (as anonymous user). As you might guess it, it will work on a single active Zeppelin container that runs on that machine. 
+The script ``start_browser.sh`` will find the container's IP, and start the Zeppelin in browser (as anonymous user). 
+As you might have guessed it, it will work on a single active Zeppelin container that runs on that machine. 
