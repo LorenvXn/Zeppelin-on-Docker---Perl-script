@@ -5,11 +5,11 @@ After running the script, you will be promted to /opt/zeppelin-0.6.1-bin-all/con
 
 ``root@tron-VirtualBox:~/Zeppelin_Docker# perl zepl.pl`` <br \>
 ``root@756548e3f116:/opt/zeppelin-0.6.1-bin-all/conf# pwd`` <br \>
-``/opt/zeppelin-0.6.1-bin-all/conf`` <br \>
+
 
 File conf/shiro.ini has been modified  for granting access only to admin user.
 
-Go to (re)Start the daemon before starting the web-based notebook:
+Go to bin folder and (re)Start the daemon before starting the web-based notebook:
 
 ``root@6d1917214148:/opt/zeppelin-0.6.1-bin-all/bin# ./zeppelin-daemon.sh restart``  <br \>
 ``Zeppelin stop ``                                             [  OK  ]  <br \>
