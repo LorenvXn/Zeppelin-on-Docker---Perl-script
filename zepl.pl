@@ -26,8 +26,8 @@ RUN  chown -R root:root /opt/zeppelin-0.6.1-bin-all/
 RUN  ln -fs /opt/zeppelin-0.6.1-bin-all /opt/zeppelin";
 
 print $fh "
-RUN sed -i '$ a\PATH=\$PATH:/opt/zeppelin/bin' .bashrc
-RUN sed -i '$ a\export PATH' .bashrc
+\RUN sed -i '\$ a\\PATH=\$PATH:/opt/zeppelin/bin' .bashrc\
+\RUN sed -i '\$ a\\export PATH' .bashrc\
 
 RUN source  ~/.bashrc";
 
