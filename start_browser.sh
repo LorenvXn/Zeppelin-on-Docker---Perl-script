@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 IP=`docker inspect $(docker ps | sed -e 's/^\(.\{10\}\).*/\1/' | awk 'NR==2')\
