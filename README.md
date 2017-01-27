@@ -33,3 +33,6 @@ Check if the web-based notebook is working:
 `` < HTTP/1.1 200 OK ``       
 
 ``[ --- etc --- ]`` 
+
+
+The script start_browser.sh will find the container's IP, and start the Zeppelin in browser (as anonymous user)
