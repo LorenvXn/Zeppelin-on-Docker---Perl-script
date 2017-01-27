@@ -7,8 +7,6 @@ After running the script, you will be promted to /opt/zeppelin-0.6.1-bin-all/con
 ``root@756548e3f116:/opt/zeppelin-0.6.1-bin-all/conf# pwd`` <br \>
 
 
-File conf/shiro.ini has been modified  for granting access only to admin user.
-
 Go to bin folder and (re)Start the Zeppelin daemon:
 
 ``root@6d1917214148:/opt/zeppelin-0.6.1-bin-all/bin# ./zeppelin-daemon.sh restart``  <br \>
@@ -16,6 +14,8 @@ Go to bin folder and (re)Start the Zeppelin daemon:
 ``Zeppelin start  ``                                           [  OK  ] <br \>
 ``root@6d1917214148:/opt/zeppelin-0.6.1-bin-all/bin#``  <br \>
 
+
+For this example, I have enabled the authentication under conf/shiro.ini for granting access only to admin user. But you can keep it as anonymous.
 Check if the web-based notebook is working:
 
 ``root@6d1917214148:/opt/zeppelin-0.6.1-bin-all/bin#  curl --user admin:password1 http://172.17.0.33:8080 -v`` <br \> 
