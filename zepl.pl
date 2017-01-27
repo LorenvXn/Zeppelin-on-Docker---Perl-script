@@ -34,8 +34,6 @@ print $fh "
 WORKDIR /opt/zeppelin/conf
 RUN cp zeppelin-site.xml.template zeppelin-site.xml
 
-WORKDIR /opt/zeppelin/bin
-
 EXPOSE 8080";
 
 close $fh;
