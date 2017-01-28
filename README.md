@@ -1,7 +1,7 @@
 # Zeppelin-on-Docker---Perl-script
 
 
-After running the script, you will be promted to /opt/zeppelin-0.6.1-bin-all/conf:
+After running the ``zepl.pl`` script, you will be sent to /opt/zeppelin-0.6.1-bin-all/conf path:
 
 ``root@tron-VirtualBox:~/Zeppelin_Docker# perl zepl.pl`` <br \>
 ``root@756548e3f116:/opt/zeppelin-0.6.1-bin-all/conf# pwd`` <br \>
