@@ -35,4 +35,4 @@ Check if the web-based notebook is working:
 ``[ --- etc --- ]`` 
 
 
-The script ``start_browser.sh`` will find the container's IP with image name "ledzeppelin:latest", and start the Zeppelin in browser (as anonymous user). 
+The script ``start_browser.sh`` will find the container's IP with image name "ledzeppelin:latest", and open the Zeppelin in browser (as anonymous user). 
