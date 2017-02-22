@@ -22,10 +22,10 @@ RUN apt-get install oracle-java7-installer -y";
 print $fh "
 WORKDIR \/root
 
-RUN wget http:\/\/apache.mirrors.pair.com\/zeppelin\/zeppelin-0.6.1\/zeppelin-0.6.1-bin-all.tgz
-RUN tar zxvf zeppelin-0.6.1-bin-all.tgz -C \/opt
-RUN  chown -R root:root \/opt\/zeppelin-0.6.1-bin-all\/
-RUN  ln -fs \/opt\/zeppelin-0.6.1-bin-all \/opt\/zeppelin";
+RUN wget http:\/\/apache.mirrors.pair.com\/zeppelin\/zeppelin-0.7.0\/zeppelin-0.7.0-bin-all.tgz
+RUN tar zxvf zeppelin-0.7.0-bin-all.tgz -C \/opt
+RUN  chown -R root:root \/opt\/zeppelin-0.7.0-bin-all\/
+RUN  ln -fs \/opt\/zeppelin-0.7.0-bin-all \/opt\/zeppelin";
 
 print $fh "
 
