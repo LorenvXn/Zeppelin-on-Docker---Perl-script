@@ -44,7 +44,7 @@ Check if the web-based notebook is working:
 
 `` > Host: 172.17.0.33:8080``
 
-`` > Accept: */*`
+`` > Accept: */*``
 
 `` >``
 
