@@ -11,21 +11,19 @@ RUN  apt-get update
 RUN  apt-get install -y wget";
 
 print $fh "
-RUN apt-get install software-properties-common -y
-RUN add-apt-repository ppa:webupd8team/java -y
-RUN apt-get update
-RUN echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections";
+RUN  apt-get install openjdk-7-jre -y
+RUN apt-get install openjdk-7-jdk -y
+RUN apt-get install python-software-properties -y
+RUN apt-get update -y";
 
-print $fh "
-RUN apt-get install oracle-java7-installer -y";
 
 print $fh "
 WORKDIR \/root
 
-RUN wget http:\/\/apache.mirrors.pair.com\/zeppelin\/zeppelin-0.7.0\/zeppelin-0.7.0-bin-all.tgz
-RUN tar zxvf zeppelin-0.7.0-bin-all.tgz -C \/opt
-RUN  chown -R root:root \/opt\/zeppelin-0.7.0-bin-all\/
-RUN  ln -fs \/opt\/zeppelin-0.7.0-bin-all \/opt\/zeppelin";
+RUN wget http:\/\/apache.mirrors.pair.com\/zeppelin\/zeppelin-0.7.2\/zeppelin-0.7.2-bin-all.tgz
+RUN tar zxvf zeppelin-0.7.2-bin-all.tgz -C \/opt
+RUN  chown -R root:root \/opt\/zeppelin-0.7.2-bin-all\/
+RUN  ln -fs \/opt\/zeppelin-0.7.2-bin-all \/opt\/zeppelin";
 
 print $fh "
 
